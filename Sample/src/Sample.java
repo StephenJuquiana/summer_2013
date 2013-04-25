@@ -118,33 +118,46 @@ public class Sample
    
     public static void main( String args[] )
     {
-    	int x = 0;
+    	x1=0;
     	do
     	{
-	    	String input = JOptionPane.showInputDialog(null,"Choose what to do: \n1. View All Items\n2. Add New Item\n3. Update Item\n4. Delete Item");
-	    	if(input == null);
-	    	else  if(input.equals("1"))
-	    	{
-		        Sample conn=new Sample();
-		        conn.View_Item();
-	    	}
-	    	else if(input.equals("2"))
-	    	{
-		        Sample conn=new Sample();
-		        conn.Add_Item();
-	    	}
-	    	else if(input.equals("3"))
-	    	{
-		        Sample conn=new Sample();
-		        conn.Update_Item();
-	    	}
-	    	else if(input.equals("4"))
-	    	{
-		        Sample conn=new Sample();
-		        conn.Delete_Item();
-	    	}
-	    	
-	    	
-    	}while(x==0);
+    		String input1 = JOptionPane.showInputDialog(null, "1. Customer \n2. Item \3. Order Line");
+    		if(input1 == null);
+    		else if(input.equals("1"))
+    		{
+		    	int x = 0;
+		    	do
+		    	{
+			    	String input = JOptionPane.showInputDialog(null,"Choose what to do: \n1. View All Customers \n2. Add New Customer \n3. Update Customer\n4. Delete Customer \n5. Nothing to do Here!");
+			    	if(input == null);
+			    	else  if(input.equals("1"))
+			    	{
+				        Sample conn=new Sample();
+				        conn.View_Item();
+			    	}
+			    	else if(input.equals("2"))
+			    	{
+				        Sample conn=new Sample();
+				        conn.Add_Item();
+			    	}
+			    	else if(input.equals("3"))
+			    	{
+				        Sample conn=new Sample();
+				        conn.Update_Item();
+			    	}
+			    	else if(input.equals("4"))
+			    	{
+				        Sample conn=new Sample();
+				        conn.Delete_Item();
+			    	}
+			    	else if(input.equals("5"))
+			    		x=1;		    	
+		    	}while(x==0);
+    		}
+    		else if(input.equals("2"))
+    		{
+    		}
+    		else if(input.equals("3"));
+    	}while(x1==0);
     }
 }
